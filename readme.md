@@ -13,6 +13,12 @@ In Task 1, exploratory data analysis (EDA) was performed to gain insights into t
 ### Task 2: Using NLP Models
 For Task 2, I apply natural language processing (NLP) techniques and models to preprocess the textual data. Preprocessing includes cleaning HTML tags, punctuation removal, ads removal, tokenization, stop-word removal, and lemmatization to clean the text. Then, an appropriate NLP models are trained, such as logistic regression, naive Bayes, and support vector classifier (SVC) to classify the site news based on the article content. Also, Hyperparameter tuning is performed to improve the performance of the model. Finally, the pipeline of data preprocessing and tuned model is saved as a pickle file.
 
+Some issues I encountered in Task 2:
+1. Imbalanced dataset on several classes.
+2. Outliers in the dataset.
+3. Need to try more models.
+4. Need to try more hyperparameter tuning.
+
 ### Task 3: Building a Simple Interface
 In Task 3, a simple web interface is built using Flask and streamlit. The web interface allows users to input textual data and the model predicts the site news based on the article content. the frontend of the web interface is built using streamlit, while the backend is built using Flask. The web interface at the moment is not deployed anywhere yet. However, the web interface is fully functional on localhost.
 
@@ -23,6 +29,12 @@ To run the web interface, go to the terminal and type:
 4. run machine learning model API: `flask --app /path/to/deployment/backend.py run`
 5. run web interface: `streamlit run /path/to/deployment/frontend.py`
 6. enter article content in the text box and click the 'Classify' button to classify its category.
+
+<br><br>
+<div align="center">
+    <img src="deployment/web-interface-test.gif" alt="GIF of web interface test">
+</div>
+
 
 ## What to do next
 1. Deploy the web interface to a production environment/web server.
